@@ -1,86 +1,64 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import { Icon } from "@iconify/react";
+import { ActionIcon, Blockquote, Button } from "@mantine/core";
+import { openModal } from "@mantine/modals";
+import Image from "next/image";
+import React, { useState } from "react";
+import Typed from "react-typed";
 
-const Home: NextPage = () => {
+const Home = () => {
+  
+    
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and its API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="mt-6 w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center gap-2"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-        </a>
-      </footer>
+    <div className=" flex flex-col items-center gap-3 mt-3">
+   
+           <section className="intro flex flex-col items-center w-full gap-3">
+           <Image
+             width={120}
+             height={120}
+             src="/images/amwatah.png"
+             className=" rounded-full border-4 hover:animate-tada"
+           />
+           <h3>I AM</h3>
+           <Typed
+             strings={[
+               "Amwatah Obuya",
+               "A fullstack Developer",
+               "A mobile app Developer",
+             ]}
+             typeSpeed={60}
+             loop
+             className=" primary text-3xl font-bold"
+           />
+           <Blockquote cite="– Amwatah Obuya" className=" shadow-lg rounded-lg">
+                 good code runs , <br />
+                 better code solves problems <br />
+                 perfect code changes lives .
+           </Blockquote>
+           <ActionIcon onClick={
+              ()=>{
+                openModal({
+                  title:"PERSONAL INFO",
+                  centered: true,
+                  children:(
+                    <div className=" w-full">
+                       <p className=" flex justify-evenly "><span className="flex-1 ">First Name</span><Icon icon="fa6-regular:hand-point-right" className=" flex-1" /><span className="flex-1">Amwatah</span></p>
+                       <p className=" flex justify-evenly "><span className="flex-1 ">Last Name</span><Icon icon="fa6-regular:hand-point-right" className=" flex-1" /><span className="flex-1">Obuya</span></p>
+                       <p className=" flex justify-evenly "><span className="flex-1 ">Nationality</span><Icon icon="fa6-regular:hand-point-right" className=" flex-1" /><span className="flex-1">Kenyan</span></p>
+                       <p className=" flex justify-evenly "><span className="flex-1 ">Age</span><Icon icon="fa6-regular:hand-point-right" className=" flex-1" /><span className="flex-1">21</span></p>
+                       <p className=" flex justify-evenly "><span className="flex-1 ">Languages</span><Icon icon="fa6-regular:hand-point-right" className=" flex-1" /><span className="flex-1">English , Swahili</span></p>
+                       <p className=" flex justify-evenly "><span className="flex-1 ">Profession</span><Icon icon="fa6-regular:hand-point-right" className=" flex-1" /><span className="flex-1">Software Engineer</span></p>
+                    </div>
+                  ),
+                  
+               })
+              }
+           } variant="filled" color="blue" className=" mt-7 text-xl animate-jello animate-infinite">
+            <Icon icon="akar-icons:info" />
+           </ActionIcon >
+         </section>
+      
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
