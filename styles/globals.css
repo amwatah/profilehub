@@ -3,5 +3,8 @@
 @tailwind utilities;
 
 .primary {
-     @apply  text-[#228BE6]
+  @apply text-[#228BE6];
+}
+::-webkit-scrollbar {
+  display: none;
 }

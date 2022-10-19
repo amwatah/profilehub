@@ -10,18 +10,21 @@ interface Props {
 }
 
 const AppLayout = ({ children }: Props) => {
-    const [activeTheme, setActiveTheme] = useAtom(activeThemeAtom)
+  const [activeTheme, setActiveTheme] = useAtom(activeThemeAtom);
   return (
     <div>
       <Switch
-        onChange={()=>setActiveTheme( activeTheme ==="light" ? "dark" : "light") }
-         className=" fixed top-0 right-0 p-1"
+        onChange={() =>
+          setActiveTheme(activeTheme === "light" ? "dark" : "light")
+        }
+        className=" fixed top-0 right-0 p-1 z-30"
         onLabel={<Icon icon="emojione:sun" className=" text-lg" />}
         offLabel={<Icon icon="bxs:moon" className=" text-lg" />}
         size="md"
       />
-      {children}
-      <BottomNav/>
+      <div className="slot mb-[10vh] ">{children}</div>
+
+      <BottomNav />
     </div>
   );
 };
