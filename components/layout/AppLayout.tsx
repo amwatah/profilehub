@@ -22,7 +22,7 @@ const AppLayout = ({ children }: Props) => {
         offLabel={<Icon icon="bxs:moon" className=" text-lg" />}
         size="md"
       />
-      <div className="slot mb-[10vh] ">{children}</div>
+      <div className="slot mb-[10vh]  ">{children}</div>
 
       <BottomNav />
     </div>

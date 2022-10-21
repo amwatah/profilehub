@@ -7,7 +7,7 @@ interface Props {
 }
 const SkillRing = ({ rating, skillName }: Props) => {
   return (
-    <div className=" shadow-lg w-fit animate-jackInTheBox hover:animate-headShake  md:col-span-2 md:w-full flex justify-center items-center">
+    <div className=" shadow-lg w-fit animate-rubberBand hover:animate-headShake  md:col-span-2 md:w-full flex justify-center items-center">
       <RingProgress
         sections={[{ value: rating, color: "blue" }]}
         label={
