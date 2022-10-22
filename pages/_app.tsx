@@ -24,6 +24,7 @@ export default function App(props: AppProps) {
         <MantineProvider
           withGlobalStyles
           withNormalizeCSS
+          withCSSVariables
           theme={{
             colorScheme: activeTheme,
             white: "#F5F8FF",

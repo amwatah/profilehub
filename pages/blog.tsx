@@ -4,7 +4,7 @@ import BlogCard from "../components/ui/BlogCard";
 
 const BlogPage = () => {
   return (
-    <div>
+    <div className="">
       <h2>Blogs</h2>
       <section className=" blogs  grid gap- 2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
         <BlogCard

@@ -5,6 +5,16 @@
 .primary {
   @apply text-[#228BE6];
 }
+
+@layer utilities {
+  .mantine-blue {
+    color: var(--mantine-color-blue-6);
+  }
+  .contact-icon {
+    @apply flex flex-col  items-center  rounded-full m-2 p-2 shadow-xl   animate-duration-[2s] hover:animate-jello border-2  border-mblue animate-zoomInDown;
+  }
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

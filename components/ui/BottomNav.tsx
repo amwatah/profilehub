@@ -8,18 +8,18 @@ const BottomNav = () => {
   const [showNav, setShowNav] = useState(false);
   return (
     <>
-      {!showNav && (
-        <Paper shadow="xl">
+      {/* {!showNav && (
+        <Paper shadow="xl w-screen">
           <ActionIcon
             onClick={() => setShowNav(true)}
             onMouseOver={() => setShowNav(true)}
-            className={`fixed bottom-0 left-[50%] primary text-3xl my-3 animate-twSpin animate-infinite animate-duration-[10s]`}
+            className={`fixed bottom-0 left-[50%]  text-mblue  text-3xl my-3 animate-jello animate-infinite `}
           >
-            <Icon icon="fe:app-menu" />
+            <Icon icon="charm:menu-meatball" className=" text-4xl " />
           </ActionIcon>
         </Paper>
-      )}
-      {showNav && (
+      )} */}
+      {!showNav && (
         <div
           onMouseLeave={() => setShowNav(false)}
           className=" fixed bottom-0 w-full h-[10vh] flex justify-center  items-center  rounded-t-md primary  animate-slideInUp   "
