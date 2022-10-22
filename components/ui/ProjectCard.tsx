@@ -1,7 +1,6 @@
 import { Icon } from "@iconify/react";
-import { Card, Chip, Paper, Skeleton } from "@mantine/core";
-import Image from "next/image";
-import React, { Children, ReactNode } from "react";
+import { Chip, Paper } from "@mantine/core";
+import React, { ReactNode } from "react";
 
 interface Props {
   projectName: string;
@@ -23,7 +22,7 @@ const ProjectCard = ({
     <Paper
       withBorder
       shadow="lg"
-      className="w-full   p-3 flex  flex-col items-center gap-2 border-2  my-3  animate-rubberBand"
+      className="w-full   p-3 mx-auto flex  flex-col items-center gap-2 border-2  my-3  animate-rubberBand"
     >
       <Paper withBorder className="image  w-full h-64 ">
         {!projectImage && (
