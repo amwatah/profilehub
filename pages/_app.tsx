@@ -28,20 +28,6 @@ export default function App(props: AppProps) {
           theme={{
             colorScheme: activeTheme,
             white: "#F5F8FF",
-            colors: {
-              dark: [
-                "#D2CBDD",
-                "#785EA3",
-                "#473269",
-                "#2A1A45",
-                "#190C2E",
-                "#0E041F",
-                "#080015",
-                "#080015",
-                "#010102",
-                "#000001",
-              ],
-            },
           }}
         >
           <ModalsProvider>
