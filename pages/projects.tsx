@@ -35,6 +35,20 @@ const ProjectsPage = () => {
           github="https://github.com/amwatah/tic-tac-toe"
           tags={["Beginner", "Next JS", "Mantine", "Typescript"]}
         />
+        <ProjectCard
+          projectName="TODO APP"
+          desribtion="A  way to track and manage daily tasks"
+          projectImage={
+            <Image
+              src="/images/todo.png"
+              className=" w-full h-full"
+              layout="fill"
+            />
+          }
+          website="https://amwatah-todo.vercel.app/"
+          github="https://github.com/amwatah/todo-app"
+          tags={["Beginner", "Next JS", "Typescript"]}
+        />
       </section>
     </div>
   );
