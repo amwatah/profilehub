@@ -1,4 +1,5 @@
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 import React from "react";
 import ProjectCard from "../components/ui/ProjectCard";
 
@@ -8,21 +9,8 @@ const ProjectsPage = () => {
       <h3>MY PROJECTS</h3>
       <section className="projects grid grid-cols-1 gap-1 sm:grid-cols-2 md:grid-cols-3 mx-[2%]">
         <ProjectCard
-          projectName="Simple Calculator"
-          desribtion="A react calculator"
-          // projectImage={
-          //   <Icon
-          //     icon="flat-color-icons:calculator"
-          //     className=" w-full h-full"
-          //   />
-          // }
-          website="https://amwatah-calc.vercel.app/"
-          github="https://github.com/amwatah/next-calculator-pwa"
-          tags={["React", "Next", "PWA", "Typescript"]}
-        />
-        <ProjectCard
-          projectName="Simple Calculator"
-          desribtion="A react calculator"
+          projectName="CALCULATOR"
+          desribtion="A Simple"
           projectImage={
             <Icon
               icon="flat-color-icons:calculator"
@@ -31,93 +19,21 @@ const ProjectsPage = () => {
           }
           website="https://amwatah-calc.vercel.app/"
           github="https://github.com/amwatah/next-calculator-pwa"
-          tags={["React", "Next", "PWA", "Typescript"]}
+          tags={["React", "PWA", "Typescript"]}
         />
         <ProjectCard
-          projectName="Simple Calculator"
-          desribtion="A react calculator"
+          projectName="TIC-TAC-TOE GAME"
+          desribtion="A simple board game"
           projectImage={
-            <Icon
-              icon="flat-color-icons:calculator"
+            <Image
+              src="/images/tic-tac-toe.png"
               className=" w-full h-full"
+              layout="fill"
             />
           }
-          website="https://amwatah-calc.vercel.app/"
-          github="https://github.com/amwatah/next-calculator-pwa"
-          tags={["React", "Next", "PWA", "Typescript"]}
-        />
-        <ProjectCard
-          projectName="Simple Calculator"
-          desribtion="A react calculator"
-          projectImage={
-            <Icon
-              icon="flat-color-icons:calculator"
-              className=" w-full h-full"
-            />
-          }
-          website="https://amwatah-calc.vercel.app/"
-          github="https://github.com/amwatah/next-calculator-pwa"
-          tags={[
-            "React",
-            "Next",
-            "PWA",
-            "Typescript",
-            "Tailwind",
-            "MUI",
-            "Firebase",
-          ]}
-        />
-        <ProjectCard
-          projectName="Simple Calculator"
-          desribtion="A react calculator"
-          projectImage={
-            <Icon
-              icon="flat-color-icons:calculator"
-              className=" w-full h-full"
-            />
-          }
-          website="https://amwatah-calc.vercel.app/"
-          github="https://github.com/amwatah/next-calculator-pwa"
-          tags={["React", "Next", "PWA", "Typescript"]}
-        />
-        <ProjectCard
-          projectName="Simple Calculator"
-          desribtion="A react calculator"
-          projectImage={
-            <Icon
-              icon="flat-color-icons:calculator"
-              className=" w-full h-full"
-            />
-          }
-          website="https://amwatah-calc.vercel.app/"
-          github="https://github.com/amwatah/next-calculator-pwa"
-          tags={["React", "Next", "PWA", "Typescript"]}
-        />
-        <ProjectCard
-          projectName="Simple Calculator"
-          desribtion="A react calculator"
-          projectImage={
-            <Icon
-              icon="flat-color-icons:calculator"
-              className=" w-full h-full"
-            />
-          }
-          website="https://amwatah-calc.vercel.app/"
-          github="https://github.com/amwatah/next-calculator-pwa"
-          tags={["React", "Next", "PWA", "Typescript"]}
-        />
-        <ProjectCard
-          projectName="Simple Calculator"
-          desribtion="A react calculator"
-          projectImage={
-            <Icon
-              icon="flat-color-icons:calculator"
-              className=" w-full h-full"
-            />
-          }
-          website="https://amwatah-calc.vercel.app/"
-          github="https://github.com/amwatah/next-calculator-pwa"
-          tags={["React", "Next", "PWA", "Typescript"]}
+          website="https://amwatah-tic-tac-toe.vercel.app/"
+          github="https://github.com/amwatah/tic-tac-toe"
+          tags={["Beginner", "Next JS", "Mantine", "Typescript"]}
         />
       </section>
     </div>

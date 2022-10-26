@@ -24,7 +24,7 @@ const ProjectCard = ({
       shadow="lg"
       className="w-full   p-3 mx-auto flex  flex-col items-center gap-2 border-2  my-3  animate-rubberBand"
     >
-      <Paper withBorder className="image  w-full h-64 ">
+      <Paper withBorder className="image  w-full h-64  relative">
         {!projectImage && (
           <Icon icon="carbon:no-image" className="  h-full w-full " />
         )}
