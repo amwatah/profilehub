@@ -1,20 +1,23 @@
 import { Icon } from "@iconify/react";
-import { ActionIcon, Blockquote, Button } from "@mantine/core";
+import { Blockquote, Button } from "@mantine/core";
 import { openModal } from "@mantine/modals";
-import Image from "next/image";
+import { Player } from "@lottiefiles/react-lottie-player";
 import React, { useState } from "react";
 import Typed from "react-typed";
+import InfoCard from "../components/ui/InfoCard";
 
 const Home = () => {
   return (
     <div className=" flex flex-col items-center gap-3 mt-3">
       <section className="intro flex flex-col items-center w-full gap-3">
-        <Image
-          width={120}
-          height={120}
-          src="/images/amwatah.png"
-          className=" rounded-full border-4 hover:animate-tada"
-        />
+        <Player
+          src="https://assets4.lottiefiles.com/packages/lf20_o6spyjnc.json"
+          background="transparent"
+          speed={1}
+          loop
+          className=" sm:w-1/2 h-96"
+          autoplay
+        ></Player>
         <h3>I AM</h3>
         <Typed
           strings={[
@@ -94,8 +97,25 @@ const Home = () => {
           color="blue"
           className=" mt-7 text-xl rounded-full  hover:animate-jello"
         >
-          INFO
+          BIO
         </Button>
+        <section className="  grid gap-3  md:grid-cols-3 m-2">
+          <InfoCard
+            skillName="Web Development"
+            describtion="I build  web applications , both frontend and backend using Javascript ."
+            logo={<Icon icon="mdi:web" />}
+          />
+          <InfoCard
+            skillName="App Development"
+            describtion="I develop  cross platform applications using Flutter  or Ionic"
+            logo={<Icon icon="ic:outline-android" />}
+          />
+          <InfoCard
+            skillName="Blogging"
+            describtion="I  write tech  related articles  on Medium and Blogger"
+            logo={<Icon icon="dashicons:welcome-write-blog" />}
+          />
+        </section>
       </section>
     </div>
   );

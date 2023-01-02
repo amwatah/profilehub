@@ -42,6 +42,8 @@ const ResumePage = () => {
               <SkillRing skillName="MONGO DB" rating={70} />
               <SkillRing skillName="GRAPHQL" rating={65} />
               <SkillRing skillName="REST APIs" rating={50} />
+              <SkillRing skillName="tRPC" rating={80} />
+              <SkillRing skillName="PRISMA" rating={50} />
             </section>
           </Tabs.Panel>
           <Tabs.Panel value="OTHERS">

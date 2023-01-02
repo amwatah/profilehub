@@ -8,6 +8,11 @@ const BlogPage = () => {
       <h2>Blogs</h2>
       <section className=" blogs  grid gap- 2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 ">
         <BlogCard
+          blogTitle="MY 2023 TECH ROADMAP"
+          website="https://medium.com/@jackalltrade2020/my-2023-tech-roadmap-b0128501cba0"
+          tags={["tech", "Web-dev"]}
+        />
+        <BlogCard
           blogTitle="FINDING SOFTWARE ENGINEERING JOBS IN KENYA"
           website="https://amwatah-obuya.blogspot.com/2022/10/finding-software-engineering-jobs-in.html"
           tags={["coding", "tech", "Web-dev"]}

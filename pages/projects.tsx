@@ -16,6 +16,7 @@ const ProjectsPage = () => {
               src="/images/planbee.png"
               className=" w-full h-full"
               layout="fill"
+              alt="project"
             />
           }
           website="https://planbee-amwatah.vercel.app/"
@@ -25,7 +26,7 @@ const ProjectsPage = () => {
 
         <ProjectCard
           projectName="CALCULATOR"
-          desribtion="Everybody once made a calc"
+          desribtion="Everybody once made a calculator"
           projectImage={
             <Icon
               icon="flat-color-icons:calculator"
@@ -44,6 +45,7 @@ const ProjectsPage = () => {
               src="/images/tic-tac-toe.png"
               className=" w-full h-full"
               layout="fill"
+              alt="project"
             />
           }
           website="https://amwatah-tic-tac-toe.vercel.app/"
@@ -58,6 +60,7 @@ const ProjectsPage = () => {
               src="/images/todo.png"
               className=" w-full h-full"
               layout="fill"
+              alt="project"
             />
           }
           website="https://amwatah-todo.vercel.app/"
@@ -72,6 +75,7 @@ const ProjectsPage = () => {
               src="/images/contacts.png"
               className=" w-full h-full"
               layout="fill"
+              alt="project"
             />
           }
           website="https://amwatah-contacts.vercel.app/"

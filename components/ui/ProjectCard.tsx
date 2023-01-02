@@ -48,7 +48,7 @@ const ProjectCard = ({
           />
         </a>
       </section>
-      <section className="tech w-full flex justify-evenly p-2  overflow-auto  ">
+      <section className="tech w-full flex  overflow-scroll  ">
         {tags?.map((tag) => (
           <Chip variant="filled">{tag}</Chip>
         ))}
