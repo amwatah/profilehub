@@ -19,7 +19,7 @@ const ProjectsPage = () => {
               alt="project"
             />
           }
-          website="https://planbee-amwatah.vercel.app/"
+          website="https://elecrika.vercel.app/"
           github="https://github.com/amwatah/elecrika"
           tags={["Next Js", "Mongodb", "Typescript", "Trpc", "Prisma"]}
         />
