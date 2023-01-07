@@ -22,33 +22,33 @@ const ProjectCard = ({
     <Paper
       withBorder
       shadow="lg"
-      className="w-full   p-3 mx-auto flex  flex-col items-center gap-2 border-2  my-3  animate-rubberBand"
+      className="flex flex-col items-center w-full gap-2 p-3 mx-auto my-3 border-2 animate-rubberBand"
     >
-      <Paper withBorder className="image  w-full h-64  relative">
+      <Paper withBorder className="relative w-full h-64 image">
         {!projectImage && (
-          <Icon icon="carbon:no-image" className="  h-full w-full " />
+          <Icon icon="carbon:no-image" className="w-full h-full " />
         )}
         {projectImage && projectImage}
       </Paper>
-      <section className="describtion leading-[0.5rem] w-full">
+      <section className="w-full describtion">
         <h4>{projectName}</h4>
         <p>{desribtion}</p>
       </section>
-      <section className="links w-full flex justify-around ">
+      <section className="flex justify-around w-full links ">
         <a href={website}>
           <Icon
             icon="cil:external-link"
-            className=" primary text-2xl font-bold"
+            className="text-2xl font-bold  primary"
           />
         </a>
         <a href={github}>
           <Icon
             icon="ant-design:github-filled"
-            className=" primary text-2xl font-bold"
+            className="text-2xl font-bold  primary"
           />
         </a>
       </section>
-      <section className="tech w-full flex  overflow-scroll  ">
+      <section className="flex w-full overflow-scroll tech ">
         {tags?.map((tag) => (
           <Chip variant="filled">{tag}</Chip>
         ))}

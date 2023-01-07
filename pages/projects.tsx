@@ -14,7 +14,7 @@ const ProjectsPage = () => {
           projectImage={
             <Image
               src="/images/electrika.png"
-              className=" w-full h-full object-cover"
+              className="object-contain w-full h-full "
               layout="fill"
               alt="project"
             />
@@ -24,12 +24,27 @@ const ProjectsPage = () => {
           tags={["Next Js", "Mongodb", "Typescript", "Trpc", "Prisma"]}
         />
         <ProjectCard
+          projectName="Peasant"
+          desribtion="A poor mans budget manager . Mange your expenses ,investments and savings."
+          projectImage={
+            <Image
+              src="/images/peasant.png"
+              className="object-contain w-full h-full "
+              layout="fill"
+              alt="project"
+            />
+          }
+          website="https://peasant.vercel.app/"
+          github="https://github.com/amwatah/peasant"
+          tags={["React", "Redux", "Valtio"]}
+        />
+        <ProjectCard
           projectName="TIC-TAC-TOE GAME"
           desribtion="A simple board game"
           projectImage={
             <Image
               src="/images/tic-tac-toe.png"
-              className=" w-full h-full"
+              className="w-full h-full "
               layout="fill"
               alt="project"
             />
@@ -44,7 +59,7 @@ const ProjectsPage = () => {
           projectImage={
             <Image
               src="/images/planbee.png"
-              className=" w-full h-full object-cover"
+              className="object-cover w-full h-full "
               layout="fill"
               alt="project"
             />
@@ -60,7 +75,7 @@ const ProjectsPage = () => {
           projectImage={
             <Icon
               icon="flat-color-icons:calculator"
-              className=" w-full h-full"
+              className="w-full h-full "
             />
           }
           website="https://amwatah-calc.vercel.app/"
@@ -74,7 +89,7 @@ const ProjectsPage = () => {
           projectImage={
             <Image
               src="/images/todo.png"
-              className=" w-full h-full object-cover"
+              className="object-cover w-full h-full "
               layout="fill"
               alt="project"
             />
@@ -89,7 +104,7 @@ const ProjectsPage = () => {
           projectImage={
             <Image
               src="/images/contacts.png"
-              className=" w-full h-full object-cover"
+              className="object-cover w-full h-full "
               layout="fill"
               alt="project"
             />
